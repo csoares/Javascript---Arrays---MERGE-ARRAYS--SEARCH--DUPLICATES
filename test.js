@@ -71,6 +71,7 @@ test("counts the frequency of each value in an array", () => {
   expect(frequencyCounter([1, 2, 2, 3, 3, 3], 2)).toEqual(2);
   expect(frequencyCounter([1, 2, 2, 3, 3, 3], 3)).toEqual(3);
   expect(frequencyCounter([1, 2, 2, 3, 3, 3], 4)).toEqual(-1);
+  expect(frequencyCounter([3, 2, 2, 3, 3, 3], 3)).toEqual(4);
 });
 
 // test for arrayPairSum.js

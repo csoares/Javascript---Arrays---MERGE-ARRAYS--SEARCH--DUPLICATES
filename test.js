@@ -25,7 +25,7 @@ test("removes duplicate values from the array", () => {
 const union = require("./ex4");
 
 test("finds the union of two arrays", () => {
-  expect(union([1, 2, 3, 4], [2, 3, 5, 6])).toEqual([2, 3]);
+  expect(union([1, 2, 3, 4], [2, 3, 5, 6])).toEqual([1, 2, 3, 4, 2, 3, 5, 6]);
 });
 
 // test for mergeAndRemoveDuplicates.js

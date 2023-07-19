@@ -63,6 +63,9 @@ test("finds duplicate values in two arrays", () => {
   expect(findDuplicates([1, 2, 3, 4], [2, 3, 5, 6])).toEqual([2, 3]);
   expect(findDuplicates([1, 3, 4], [2, 3, 5, 6, 2])).toEqual([3]);
   expect(findDuplicates([1, 3, 4, 2, 2], [2, 3, 5, 6, 2])).toEqual([2, 2, 3]);
+  expect(findDuplicates([1, 3, 4, 2, 2, 2], [2, 3, 5, 6, 2])).toEqual([
+    2, 2, 3,
+  ]);
 });
 
 // test for frequencyCounter.js
